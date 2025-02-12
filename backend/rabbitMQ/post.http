@@ -1,0 +1,28 @@
+@url=http://localhost:3000
+
+### Info log
+POST {{url}}/sendLog
+Content-Type: application/json
+
+{
+    "logType": "Info",
+    "message": "Everything works OK"
+}
+
+### Warning log
+POST {{url}}/sendLog
+Content-Type: application/json
+
+{
+    "logType": "Warning",
+    "message": "Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies"
+}
+
+### Error log
+POST {{url}}/sendLog
+Content-Type: application/json
+
+{
+    "logType": "Error",
+    "message": "Unchecked runtime.lastError: The message port closed before a response was received"
+}
